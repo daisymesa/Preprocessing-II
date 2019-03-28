@@ -171,13 +171,6 @@ img {
 nav {
   font-size: 1.5rem;
 }
-@media (max-width: 500px) {
-  nav {
-    display: inline;
-    width: 400px;
-    margin-top: 25px;
-  }
-}
 nav a {
   color: black;
   text-decoration: none;
@@ -213,29 +206,37 @@ header {
   header {
     display: block;
     text-align: center;
-    padding: 25px 10px 0;
+    padding: 10px 0 0;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    margin-bottom: 15px;
   }
 }
 .home-img {
   border-top: dashed 2px lightgray;
+}
+@media (max-width: 500px) {
+  .home-img {
+    padding: 0px 10px 0;
+    margin-top: 10px;
+  }
 }
 .home-img .fun-bus {
   width: 800px;
   display: flex;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .home-img .fun-bus {
-    padding: 25px 10px 0;
-  }
+.home {
+  padding: 25px 0;
 }
 @media (max-width: 500px) {
   .home {
-    padding: 10px 25px;
+    padding: 20px 25px;
   }
 }
 .home .top-content-section {
-  padding: 25px 0;
   border-bottom: dashed 2px lightgray;
 }
 .home .content-section {
@@ -273,8 +274,8 @@ header {
 }
 @media (max-width: 500px) {
   .home .content-section .img-content img {
-    padding: 10px 0;
-    width: 75%;
+    margin: 10px 0;
+    width: 100%;
   }
 }
 .home .inverse-content {
@@ -315,6 +316,7 @@ header {
 @media (max-width: 500px) {
   .home .content-pick {
     display: block;
+    padding: 25px 25px 0;
   }
 }
 .home .content-pick .destination {
@@ -327,7 +329,7 @@ header {
   }
 }
 .home .content-pick .destination .btn {
-  width: 200px;
+  width: 180px;
   background-color: #17A2B8;
   color: #FFFFFF;
   cursor: pointer;
