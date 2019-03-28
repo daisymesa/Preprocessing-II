@@ -4,6 +4,15 @@ header {
   display: flex;
   align-items: center; 
   justify-content: space-between;
+
+  @media @mobile {
+    .logo {
+      .test();
+      padding: 0;
+      display: block;
+    }
+    
+  }
 }
 
 .home-img {
@@ -13,11 +22,22 @@ header {
     width: 800px;
     display: flex;
     margin: 0 auto;
+
+    @media @mobile {
+      padding: 10px;
+    }
+
+    
   }
 }
 
 
 .home {
+
+  @media @mobile {
+    padding: 10px;
+  }
+
   .top-content-section {
     padding: 25px 0;
     border-bottom: dashed 2px lightgray;
@@ -30,19 +50,35 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      display: block;
+      margin: 30px auto 30px;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+        @media @mobile {
+          padding: 10px 0;
+        }
       }
     }
   }
@@ -77,12 +113,20 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: block;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       .btn {
-        .default-button(@width: 200px; @bgcolor: rgb(0, 146, 148); @fontcolor: white)
+        .default-button(@width: 200px; @bgcolor: @eastern-blue; @fontcolor: @white)
       }
       
     }

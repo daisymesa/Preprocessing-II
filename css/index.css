@@ -197,6 +197,13 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header .logo {
+    border: solid red;
+    padding: 0;
+    display: block;
+  }
+}
 .home-img {
   border-top: dashed 2px lightgray;
 }
@@ -204,6 +211,16 @@ header {
   width: 800px;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home-img .fun-bus {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 10px;
+  }
 }
 .home .top-content-section {
   padding: 25px 0;
@@ -215,16 +232,37 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: block;
+    margin: 30px auto 30px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    padding: 10px 0;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -251,14 +289,24 @@ header {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: block;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .home .content-pick .destination .btn {
   width: 200px;
-  background-color: #009294;
-  color: white;
+  background-color: #17A2B8;
+  color: #FFFFFF;
   cursor: pointer;
   height: 45px;
   font-size: 1.75rem;
@@ -267,7 +315,7 @@ header {
   padding: 12px 0;
 }
 .home .content-pick .destination .btn:hover {
-  background-color: white;
-  color: #009294;
-  border: solid #009294;
+  background-color: #FFFFFF;
+  color: #17A2B8;
+  border: solid #17A2B8;
 }
