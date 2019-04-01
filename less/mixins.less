@@ -1,1 +1,28 @@
 // Mixins in here
+
+.test () {
+    border: solid red;
+}
+
+.default-button(@width: 180px; @bgcolor: @eastern-blue; @fontcolor: @white) {
+    width: @width;
+    background-color: @bgcolor;
+    color: @fontcolor;
+    
+    cursor: pointer;
+    height: 45px;
+    font-size: 1.75rem;
+    border-radius: 15px;
+    text-align: center;
+    padding: 12px 0;
+
+    @media @mobile {
+        width: 400px;
+      }
+
+    &:hover {
+        background-color: @fontcolor;
+        color: @bgcolor;
+        border: solid @bgcolor;
+    }
+}
